@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="aboutme.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">bout Reza Pahlevi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutme.html">About me</a></li>
+                        <li><a href="index.html">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:zare95752@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+                 <div class="hero-text">
+                    <h5>Malas <span class="input">About me</span></h5>
+                    <h1>About Me</h1>
+                    <p>Saya adalah siswa jurusan Rekayasa Perangkat Lunak (RPL) dengan minat khusus dalam pengembangan web. Saya terampil dalam berbagai teknologi web, termasuk HTML, CSS, JavaScript, serta framework seperti React dan Angular. Saya berfokus pada pembuatan dan perancangan situs web yang responsif dan user-friendly. Selain itu, saya menikmati tantangan dalam mengoptimalkan performa situs dan memastikan pengalaman pengguna yang optimal. Dalam jurusan ini, saya terus memperbarui keterampilan saya dengan tren terbaru dan teknik terbaik dalam industri web.
+                    </p>
+                    </div>
+                 </div>
+            </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["About me","Testing wak","Masi mager ngisi"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
